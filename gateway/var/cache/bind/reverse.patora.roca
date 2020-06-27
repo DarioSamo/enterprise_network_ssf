@@ -1,0 +1,21 @@
+$TTL 604800
+@       IN      SOA     patora.roca.    root.patora.roca. (
+                                                20200527
+                                                604820
+                                                864500
+                                                2419270
+                                                604880 )
+
+; Your name server info
+@       IN      NS      primary.patora.roca.
+primary IN      A       10.0.0.1
+
+; Reverse lookup for DNS server
+1       IN      PTR     primary.patora.roca.
+
+; PTR Record IP address to hostname
+11      IN      PTR     www.patora.roca.
+12      IN      PTR     mail.patora.roca.
+10      IN      PTR     db.patora.roca.
+14      IN      PTR     sftp.patora.roca.
+1       IN      PTR     ntp.patora.roca.

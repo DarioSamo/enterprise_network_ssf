@@ -1,0 +1,23 @@
+$TTL    604800
+@       IN      SOA     primary.patora.roca. root.primary.patora.roca. (
+                                20200526
+                                604800
+                                86400
+                                2419200
+                                604600 )
+
+; Name server information
+@       IN      NS      primary.patora.roca.
+
+; IP address of DNS
+primary IN      A       10.0.0.1
+
+; Mail server record
+patora.roca.    IN      MX      10      mail.patora.roca.
+
+; A record for host names
+www     IN      A       10.0.0.11
+mail    IN      A       10.0.0.12
+db      IN      A       10.0.0.10
+sftp    IN      A       10.0.0.14
+ntp     IN      A       10.0.0.1
